@@ -1,17 +1,15 @@
-{% extends 'frontend/base.html' %}
-
-{% block body %}
+{% extends 'frontend/base.html' %} {% block body %}
 
 <body>
-    <div id="app" class="grid-x cell large-8 align-center">
+  <div id="app" class="grid-x cell large-8 align-center">
     <!-- React will load here -->
-    </div>
+  </div>
 
-{% load static %}
-    <script src="{% static "frontend/main.js" %}"></script>
-    <script>
-     $(document).foundation();
-    </script>
+  {% load static %}
+  <script src="{% static "frontend/main.js" %}"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 
 {% endblock %}
